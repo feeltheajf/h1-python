@@ -484,6 +484,10 @@ class ActivityBugTriaged(ActivityStateChange):
     TYPE = "activity-bug-triaged"
 
 
+class ActivityChangedScope(ActivityStateChange):
+    TYPE = "activity-changed-scope"
+
+
 class ActivityComment(ActivityBase):
     TYPE = "activity-comment"
 
