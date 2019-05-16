@@ -514,7 +514,7 @@ class ActivityExternalUserJoined(ActivityBase):
     TYPE = "activity-external-user-joined"
 
     def _activity_hydrate(self):
-        self._make_attribute("duplicate_report_id", self._hydrate_verbatim)
+        self._make_attribute("duplicate_report_id", self._hydrate_verbatim, optional=True)
 
 
 class ActivityExternalUserRemoved(ActivityBase):
